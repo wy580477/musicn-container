@@ -12,7 +12,7 @@
 ## 部署
 
   ```
-  docker run -d --name=musicn --restart=unless-stopped -v {$PWD}:/data -p 7478:7478 ghcr.io/wy580477/musicn-container:latest msc -q
+  docker run -d --name=musicn --restart=unless-stopped -v ${PWD}/musicn:/data -p 7478:7478 ghcr.io/wy580477/musicn-container:latest msc -q
   ```
   ${PWD}/musicn 为命令行模式下载文件存放目录，默认当前目录下 musicn 文件夹。
   
