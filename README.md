@@ -19,7 +19,7 @@
   执行 musicn 命令:
 
   ```
-  docker run -it musicn msc 周杰伦
+  docker exec -it musicn msc 周杰伦
   
   # 设置 bash 命令别名方便使用，重新登陆 shell 后生效
   echo "alias msc='docker exec -it musicn msc'" >> ~/.bashrc
