@@ -11,8 +11,13 @@
 
 ## 部署
 
+  命令行 + Web 模式
   ```
   docker run -d --name=musicn --restart=unless-stopped -v ${PWD}/musicn:/data -p 7478:7478 ghcr.io/wy580477/musicn-container:latest msc -q
+  ```
+  仅命令行模式 （空闲时几乎不耗内存）
+  ```
+  docker run -d --name=musicn --restart=unless-stopped -v ${PWD}/musicn:/data ghcr.io/wy580477/musicn-container:latest tail -f
   ```
   ${PWD}/musicn 为命令行模式下载文件存放目录，默认当前目录下 musicn 文件夹。
   
@@ -34,7 +39,7 @@
   ![image](https://user-images.githubusercontent.com/98247050/230908384-99c5d283-26f6-4a9b-aa9f-104ccf7e4702.png)
   
 ### Docker-Compose 部署
-
+  命令行 + Web 模式
   ```
 version: '3.4'
 services:
@@ -46,6 +51,20 @@ services:
     entrypoint: ["msc", "-q"]
     ports:
       - "7478:7478"
+    volumes:
+      - ./musicn:/data
+   ``` 
+   
+仅命令行模式
+  ```
+version: '3.4'
+services:
+
+  musicn:
+    image: ghcr.io/wy580477/musicn-container:latest
+    container_name: musicn
+    restart: unless-stopped
+    entrypoint: ["tail", "-f"]
     volumes:
       - ./musicn:/data
    ``` 
