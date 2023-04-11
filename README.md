@@ -40,7 +40,7 @@
   
 ### Docker-Compose 部署
   命令行 + Web 模式
-  ```
+```
 version: '3.4'
 services:
 
@@ -53,10 +53,10 @@ services:
       - "7478:7478"
     volumes:
       - ./musicn:/data
-   ``` 
+ ``` 
    
 仅命令行模式
-  ```
+```
 version: '3.4'
 services:
 
@@ -67,5 +67,5 @@ services:
     entrypoint: ["tail", "-f"]
     volumes:
       - ./musicn:/data
-   ``` 
+ ``` 
   
