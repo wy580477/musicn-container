@@ -31,6 +31,9 @@
   
   # 查看命令帮助
   msc -h
+  
+  # 指定子目录 test 为下载目录
+  msc 周杰伦 -p ./test
   ```
   更多命令用法详见： [musicn 文档](https://github.com/zonemeen/musicn#%E6%90%9C%E7%B4%A2%E7%9A%84%E9%A1%B5%E7%A0%81%E6%95%B0%E9%BB%98%E8%AE%A4%E6%98%AF%E7%AC%AC1%E9%A1%B5)
   
