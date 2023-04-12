@@ -34,6 +34,13 @@
   
   # 指定子目录 test 为下载目录
   msc 周杰伦 -p ./test
+  
+  # 升级版本
+  docker container rm musicn --force && docker pull ghcr.io/wy580477/musicn-container:latest
+  # 然后重新执行安装命令
+  
+  # 容器内升级 （不推荐，万一我以后弃坑不更新 image 版本，可以用这个方法更新）
+  docker exec -it musicn npm i musicn -g
   ```
   更多命令用法详见： [musicn 文档](https://github.com/zonemeen/musicn#%E6%90%9C%E7%B4%A2%E7%9A%84%E9%A1%B5%E7%A0%81%E6%95%B0%E9%BB%98%E8%AE%A4%E6%98%AF%E7%AC%AC1%E9%A1%B5)
   
