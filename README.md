@@ -58,7 +58,7 @@ services:
     image: ghcr.io/wy580477/musicn-container:latest
     container_name: musicn
     restart: unless-stopped
-    entrypoint: ["msc", "-q"]
+    entrypoint: ["/sbin/tini", "--", "msc", "-q"]
     ports:
       - "7478:7478"
     volumes:
@@ -74,7 +74,7 @@ services:
     image: ghcr.io/wy580477/musicn-container:latest
     container_name: musicn
     restart: unless-stopped
-    entrypoint: ["tail", "-f"]
+    entrypoint: ["/sbin/tini", "--", "tail", "-f"]
     volumes:
       - ./musicn:/data
  ``` 
