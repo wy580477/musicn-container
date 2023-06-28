@@ -44,7 +44,7 @@
   ```
   更多命令用法详见： [musicn 文档](https://github.com/zonemeen/musicn#%E6%90%9C%E7%B4%A2%E7%9A%84%E9%A1%B5%E7%A0%81%E6%95%B0%E9%BB%98%E8%AE%A4%E6%98%AF%E7%AC%AC1%E9%A1%B5)
   
-  访问 http://<宿主机 ip>:7478/music 可到达 Web 搜索和下载界面。(扫码访问功能不可用, 请手动输入网址访问)
+  访问 http://<宿主机 ip>:7478 可到达 Web 搜索和下载界面。(扫码访问功能不可用, 请手动输入网址访问)
   
   ![image](https://user-images.githubusercontent.com/98247050/230908384-99c5d283-26f6-4a9b-aa9f-104ccf7e4702.png)
   
