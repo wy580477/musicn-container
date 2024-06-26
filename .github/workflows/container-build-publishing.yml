@@ -65,7 +65,7 @@ jobs:
           echo "new_tag=true" >> "$GITHUB_OUTPUT"
 
       - name: Save Last Processed Tag
-        if: ${{ env.lastest_tag != env.last_tag }}
+        if: ${{ env.latest_tag != env.last_tag }}
         run: echo ${latest_tag} > .last_upstream_tag
 
       - name: Commit and Push Last Processed Tag
