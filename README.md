@@ -4,7 +4,9 @@
 
 ## 概述
 
-可播放及下载高品质音乐的命令行工具 [musicn](https://github.com/zonemeen/musicn) 的容器版本，支持 amd64/arm64 架构。
+可播放及下载音乐的命令行工具 [musicn](https://github.com/zonemeen/musicn) 的容器版本，支持 amd64/arm64 架构。
+
+目前已不能下载无损格式。
 
 ![image](https://user-images.githubusercontent.com/98247050/230909773-52d95ba7-e42e-4612-86dd-7cb363bc3f2f.png)
 
